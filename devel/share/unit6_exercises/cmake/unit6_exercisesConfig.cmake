@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(unit6_exercises_LIBRARIES ${unit6_exercises_LIBRARIES})
 
   _list_append_unique(unit6_exercises_LIBRARY_DIRS ${${unit6_exercises_dep}_LIBRARY_DIRS})
-  _list_append_deduplicate(unit6_exercises_EXPORTED_TARGETS ${${unit6_exercises_dep}_EXPORTED_TARGETS})
+  list(APPEND unit6_exercises_EXPORTED_TARGETS ${${unit6_exercises_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "")

@@ -54,6 +54,8 @@ CMAKE_BINARY_DIR = /home/user/catkin_ws/build
 
 # The main recursive "all" target.
 all: gtest/all
+all: exercises_unit_8/all
+all: modern_cpp_course/robot_commander/all
 all: laser_reader/all
 all: unit6_exercises/all
 
@@ -61,6 +63,8 @@ all: unit6_exercises/all
 
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
+preinstall: exercises_unit_8/preinstall
+preinstall: modern_cpp_course/robot_commander/preinstall
 preinstall: laser_reader/preinstall
 preinstall: unit6_exercises/preinstall
 
@@ -73,10 +77,44 @@ clean: CMakeFiles/clean_test_results.dir/clean
 clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
+clean: exercises_unit_8/clean
+clean: modern_cpp_course/robot_commander/clean
 clean: laser_reader/clean
 clean: unit6_exercises/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory exercises_unit_8
+
+# Recursive "all" directory target.
+exercises_unit_8/all:
+
+.PHONY : exercises_unit_8/all
+
+# Recursive "preinstall" directory target.
+exercises_unit_8/preinstall:
+
+.PHONY : exercises_unit_8/preinstall
+
+# Recursive "clean" directory target.
+exercises_unit_8/clean: exercises_unit_8/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+exercises_unit_8/clean: exercises_unit_8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+exercises_unit_8/clean: exercises_unit_8/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+exercises_unit_8/clean: exercises_unit_8/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+exercises_unit_8/clean: exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+exercises_unit_8/clean: exercises_unit_8/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+exercises_unit_8/clean: exercises_unit_8/CMakeFiles/roscpp_generate_messages_py.dir/clean
+exercises_unit_8/clean: exercises_unit_8/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+exercises_unit_8/clean: exercises_unit_8/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+exercises_unit_8/clean: exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+exercises_unit_8/clean: exercises_unit_8/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+exercises_unit_8/clean: exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+exercises_unit_8/clean: exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+exercises_unit_8/clean: exercises_unit_8/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+exercises_unit_8/clean: exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+
+.PHONY : exercises_unit_8/clean
 
 #=============================================================================
 # Directory level rules for directory gtest
@@ -149,33 +187,38 @@ laser_reader/preinstall:
 .PHONY : laser_reader/preinstall
 
 # Recursive "clean" directory target.
-laser_reader/clean: laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-laser_reader/clean: laser_reader/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-laser_reader/clean: laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
-laser_reader/clean: laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
-laser_reader/clean: laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-laser_reader/clean: laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-laser_reader/clean: laser_reader/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-laser_reader/clean: laser_reader/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-laser_reader/clean: laser_reader/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-laser_reader/clean: laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
-laser_reader/clean: laser_reader/CMakeFiles/roscpp_generate_messages_py.dir/clean
-laser_reader/clean: laser_reader/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-laser_reader/clean: laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+laser_reader/clean: laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
 laser_reader/clean: laser_reader/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
-laser_reader/clean: laser_reader/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+laser_reader/clean: laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+laser_reader/clean: laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 laser_reader/clean: laser_reader/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 laser_reader/clean: laser_reader/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
-laser_reader/clean: laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 laser_reader/clean: laser_reader/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
-laser_reader/clean: laser_reader/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-laser_reader/clean: laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
-laser_reader/clean: laser_reader/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
-laser_reader/clean: laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
-laser_reader/clean: laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-laser_reader/clean: laser_reader/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+laser_reader/clean: laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+laser_reader/clean: laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+laser_reader/clean: laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
 
 .PHONY : laser_reader/clean
+
+#=============================================================================
+# Directory level rules for directory modern_cpp_course/robot_commander
+
+# Recursive "all" directory target.
+modern_cpp_course/robot_commander/all: modern_cpp_course/robot_commander/CMakeFiles/robot_commander_node.dir/all
+modern_cpp_course/robot_commander/all: modern_cpp_course/robot_commander/CMakeFiles/robot_commander.dir/all
+
+.PHONY : modern_cpp_course/robot_commander/all
+
+# Recursive "preinstall" directory target.
+modern_cpp_course/robot_commander/preinstall:
+
+.PHONY : modern_cpp_course/robot_commander/preinstall
+
+# Recursive "clean" directory target.
+modern_cpp_course/robot_commander/clean: modern_cpp_course/robot_commander/CMakeFiles/robot_commander_node.dir/clean
+modern_cpp_course/robot_commander/clean: modern_cpp_course/robot_commander/CMakeFiles/robot_commander.dir/clean
+
+.PHONY : modern_cpp_course/robot_commander/clean
 
 #=============================================================================
 # Directory level rules for directory unit6_exercises
@@ -471,355 +514,490 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
-# Target rules for target laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
+# Target rules for target exercises_unit_8/CMakeFiles/std_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_py"
-.PHONY : laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+exercises_unit_8/CMakeFiles/std_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/std_msgs_generate_messages_py.dir/build.make exercises_unit_8/CMakeFiles/std_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f exercises_unit_8/CMakeFiles/std_msgs_generate_messages_py.dir/build.make exercises_unit_8/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
+.PHONY : exercises_unit_8/CMakeFiles/std_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+exercises_unit_8/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 exercises_unit_8/CMakeFiles/std_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-.PHONY : laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : exercises_unit_8/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_py: laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+std_msgs_generate_messages_py: exercises_unit_8/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_py
+.PHONY : std_msgs_generate_messages_py
 
 # clean rule for target.
-laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-.PHONY : laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+exercises_unit_8/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/std_msgs_generate_messages_py.dir/build.make exercises_unit_8/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : exercises_unit_8/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target laser_reader/CMakeFiles/roscpp_generate_messages_lisp.dir
+# Target rules for target exercises_unit_8/CMakeFiles/std_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-laser_reader/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
-	$(MAKE) -f laser_reader/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make laser_reader/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
-	$(MAKE) -f laser_reader/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make laser_reader/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
-.PHONY : laser_reader/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+exercises_unit_8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make exercises_unit_8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f exercises_unit_8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make exercises_unit_8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
+.PHONY : exercises_unit_8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-laser_reader/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
+exercises_unit_8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 exercises_unit_8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-.PHONY : laser_reader/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : exercises_unit_8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_lisp: laser_reader/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+std_msgs_generate_messages_nodejs: exercises_unit_8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : roscpp_generate_messages_lisp
+.PHONY : std_msgs_generate_messages_nodejs
 
 # clean rule for target.
-laser_reader/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
-	$(MAKE) -f laser_reader/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make laser_reader/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-.PHONY : laser_reader/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+exercises_unit_8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make exercises_unit_8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+.PHONY : exercises_unit_8/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
+# Target rules for target exercises_unit_8/CMakeFiles/roscpp_generate_messages_cpp.dir
 
 # All Build rule for target.
-laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
-.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+exercises_unit_8/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make exercises_unit_8/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
+	$(MAKE) -f exercises_unit_8/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make exercises_unit_8/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
+.PHONY : exercises_unit_8/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+exercises_unit_8/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 exercises_unit_8/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : exercises_unit_8/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_cpp: laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+roscpp_generate_messages_cpp: exercises_unit_8/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
-.PHONY : geometry_msgs_generate_messages_cpp
+.PHONY : roscpp_generate_messages_cpp
 
 # clean rule for target.
-laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
-.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+exercises_unit_8/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make exercises_unit_8/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+.PHONY : exercises_unit_8/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
+# Target rules for target exercises_unit_8/CMakeFiles/roscpp_generate_messages_eus.dir
 
 # All Build rule for target.
-laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
-.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+exercises_unit_8/CMakeFiles/roscpp_generate_messages_eus.dir/all:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/roscpp_generate_messages_eus.dir/build.make exercises_unit_8/CMakeFiles/roscpp_generate_messages_eus.dir/depend
+	$(MAKE) -f exercises_unit_8/CMakeFiles/roscpp_generate_messages_eus.dir/build.make exercises_unit_8/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
+.PHONY : exercises_unit_8/CMakeFiles/roscpp_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+exercises_unit_8/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 exercises_unit_8/CMakeFiles/roscpp_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+.PHONY : exercises_unit_8/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_nodejs: laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+roscpp_generate_messages_eus: exercises_unit_8/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
-.PHONY : geometry_msgs_generate_messages_nodejs
-
-# clean rule for target.
-laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
-.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
-
-#=============================================================================
-# Target rules for target laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
-
-# All Build rule for target.
-laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_lisp"
-.PHONY : laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-.PHONY : laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_lisp
+.PHONY : roscpp_generate_messages_eus
 
 # clean rule for target.
-laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-.PHONY : laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+exercises_unit_8/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/roscpp_generate_messages_eus.dir/build.make exercises_unit_8/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+.PHONY : exercises_unit_8/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
+# Target rules for target exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
-.PHONY : laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-
-# Build rule for subdir invocation for target.
-laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-.PHONY : laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_eus: laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# clean rule for target.
-laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-.PHONY : laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-
-#=============================================================================
-# Target rules for target laser_reader/CMakeFiles/std_msgs_generate_messages_cpp.dir
-
-# All Build rule for target.
-laser_reader/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f laser_reader/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f laser_reader/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
-.PHONY : laser_reader/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-laser_reader/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-.PHONY : laser_reader/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: laser_reader/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : std_msgs_generate_messages_cpp
-
-# clean rule for target.
-laser_reader/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f laser_reader/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : laser_reader/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-
-#=============================================================================
-# Target rules for target laser_reader/CMakeFiles/roscpp_generate_messages_nodejs.dir
-
-# All Build rule for target.
-laser_reader/CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
-	$(MAKE) -f laser_reader/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make laser_reader/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
-	$(MAKE) -f laser_reader/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make laser_reader/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_nodejs"
-.PHONY : laser_reader/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-
-# Build rule for subdir invocation for target.
-laser_reader/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-.PHONY : laser_reader/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_nodejs: laser_reader/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-.PHONY : roscpp_generate_messages_nodejs
-
-# clean rule for target.
-laser_reader/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f laser_reader/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make laser_reader/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-.PHONY : laser_reader/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-
-#=============================================================================
-# Target rules for target laser_reader/CMakeFiles/std_msgs_generate_messages_eus.dir
-
-# All Build rule for target.
-laser_reader/CMakeFiles/std_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f laser_reader/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make laser_reader/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f laser_reader/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make laser_reader/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
-.PHONY : laser_reader/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-
-# Build rule for subdir invocation for target.
-laser_reader/CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-.PHONY : laser_reader/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: laser_reader/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-.PHONY : std_msgs_generate_messages_eus
-
-# clean rule for target.
-laser_reader/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f laser_reader/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make laser_reader/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-.PHONY : laser_reader/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-
-#=============================================================================
-# Target rules for target laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
-
-# All Build rule for target.
-laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
-.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_lisp: laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# clean rule for target.
-laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
-.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
-
-#=============================================================================
-# Target rules for target laser_reader/CMakeFiles/roscpp_generate_messages_py.dir
-
-# All Build rule for target.
-laser_reader/CMakeFiles/roscpp_generate_messages_py.dir/all:
-	$(MAKE) -f laser_reader/CMakeFiles/roscpp_generate_messages_py.dir/build.make laser_reader/CMakeFiles/roscpp_generate_messages_py.dir/depend
-	$(MAKE) -f laser_reader/CMakeFiles/roscpp_generate_messages_py.dir/build.make laser_reader/CMakeFiles/roscpp_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
-.PHONY : laser_reader/CMakeFiles/roscpp_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-laser_reader/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/roscpp_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-.PHONY : laser_reader/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_py: laser_reader/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-.PHONY : roscpp_generate_messages_py
-
-# clean rule for target.
-laser_reader/CMakeFiles/roscpp_generate_messages_py.dir/clean:
-	$(MAKE) -f laser_reader/CMakeFiles/roscpp_generate_messages_py.dir/build.make laser_reader/CMakeFiles/roscpp_generate_messages_py.dir/clean
-.PHONY : laser_reader/CMakeFiles/roscpp_generate_messages_py.dir/clean
-
-#=============================================================================
-# Target rules for target laser_reader/CMakeFiles/std_msgs_generate_messages_lisp.dir
-
-# All Build rule for target.
-laser_reader/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f laser_reader/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make laser_reader/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f laser_reader/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make laser_reader/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
-.PHONY : laser_reader/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-laser_reader/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-.PHONY : laser_reader/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: laser_reader/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : std_msgs_generate_messages_lisp
-
-# clean rule for target.
-laser_reader/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f laser_reader/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make laser_reader/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : laser_reader/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-
-#=============================================================================
-# Target rules for target laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
-
-# All Build rule for target.
-laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
-.PHONY : laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+.PHONY : exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-.PHONY : laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+.PHONY : exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+rosgraph_msgs_generate_messages_nodejs: exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_nodejs
 
 # clean rule for target.
-laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-.PHONY : laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+.PHONY : exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target exercises_unit_8/CMakeFiles/std_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+exercises_unit_8/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make exercises_unit_8/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f exercises_unit_8/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make exercises_unit_8/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
+.PHONY : exercises_unit_8/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+exercises_unit_8/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 exercises_unit_8/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+.PHONY : exercises_unit_8/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_lisp: exercises_unit_8/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : std_msgs_generate_messages_lisp
+
+# clean rule for target.
+exercises_unit_8/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make exercises_unit_8/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : exercises_unit_8/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target exercises_unit_8/CMakeFiles/roscpp_generate_messages_py.dir
+
+# All Build rule for target.
+exercises_unit_8/CMakeFiles/roscpp_generate_messages_py.dir/all:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/roscpp_generate_messages_py.dir/build.make exercises_unit_8/CMakeFiles/roscpp_generate_messages_py.dir/depend
+	$(MAKE) -f exercises_unit_8/CMakeFiles/roscpp_generate_messages_py.dir/build.make exercises_unit_8/CMakeFiles/roscpp_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
+.PHONY : exercises_unit_8/CMakeFiles/roscpp_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+exercises_unit_8/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 exercises_unit_8/CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+.PHONY : exercises_unit_8/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: exercises_unit_8/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+.PHONY : roscpp_generate_messages_py
+
+# clean rule for target.
+exercises_unit_8/CMakeFiles/roscpp_generate_messages_py.dir/clean:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/roscpp_generate_messages_py.dir/build.make exercises_unit_8/CMakeFiles/roscpp_generate_messages_py.dir/clean
+.PHONY : exercises_unit_8/CMakeFiles/roscpp_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target exercises_unit_8/CMakeFiles/std_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+exercises_unit_8/CMakeFiles/std_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make exercises_unit_8/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f exercises_unit_8/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make exercises_unit_8/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
+.PHONY : exercises_unit_8/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+exercises_unit_8/CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 exercises_unit_8/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+.PHONY : exercises_unit_8/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_eus: exercises_unit_8/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+.PHONY : std_msgs_generate_messages_eus
+
+# clean rule for target.
+exercises_unit_8/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make exercises_unit_8/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+.PHONY : exercises_unit_8/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target exercises_unit_8/CMakeFiles/roscpp_generate_messages_nodejs.dir
+
+# All Build rule for target.
+exercises_unit_8/CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make exercises_unit_8/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
+	$(MAKE) -f exercises_unit_8/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make exercises_unit_8/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_nodejs"
+.PHONY : exercises_unit_8/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+exercises_unit_8/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 exercises_unit_8/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+.PHONY : exercises_unit_8/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_nodejs: exercises_unit_8/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+
+.PHONY : roscpp_generate_messages_nodejs
+
+# clean rule for target.
+exercises_unit_8/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make exercises_unit_8/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+.PHONY : exercises_unit_8/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
+.PHONY : exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+.PHONY : exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# clean rule for target.
+exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+.PHONY : exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target exercises_unit_8/CMakeFiles/std_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+exercises_unit_8/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make exercises_unit_8/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f exercises_unit_8/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make exercises_unit_8/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
+.PHONY : exercises_unit_8/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+exercises_unit_8/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 exercises_unit_8/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+.PHONY : exercises_unit_8/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_cpp: exercises_unit_8/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : std_msgs_generate_messages_cpp
+
+# clean rule for target.
+exercises_unit_8/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make exercises_unit_8/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : exercises_unit_8/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
+.PHONY : exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+.PHONY : exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_eus: exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# clean rule for target.
+exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+.PHONY : exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_lisp"
+.PHONY : exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+.PHONY : exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_lisp: exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# clean rule for target.
+exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+.PHONY : exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target exercises_unit_8/CMakeFiles/roscpp_generate_messages_lisp.dir
+
+# All Build rule for target.
+exercises_unit_8/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make exercises_unit_8/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
+	$(MAKE) -f exercises_unit_8/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make exercises_unit_8/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
+.PHONY : exercises_unit_8/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+exercises_unit_8/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 exercises_unit_8/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+.PHONY : exercises_unit_8/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_lisp: exercises_unit_8/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+.PHONY : roscpp_generate_messages_lisp
+
+# clean rule for target.
+exercises_unit_8/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make exercises_unit_8/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+.PHONY : exercises_unit_8/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_py"
+.PHONY : exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+.PHONY : exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_py: exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# clean rule for target.
+exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+.PHONY : exercises_unit_8/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target modern_cpp_course/robot_commander/CMakeFiles/robot_commander_node.dir
+
+# All Build rule for target.
+modern_cpp_course/robot_commander/CMakeFiles/robot_commander_node.dir/all: modern_cpp_course/robot_commander/CMakeFiles/robot_commander.dir/all
+	$(MAKE) -f modern_cpp_course/robot_commander/CMakeFiles/robot_commander_node.dir/build.make modern_cpp_course/robot_commander/CMakeFiles/robot_commander_node.dir/depend
+	$(MAKE) -f modern_cpp_course/robot_commander/CMakeFiles/robot_commander_node.dir/build.make modern_cpp_course/robot_commander/CMakeFiles/robot_commander_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num=37,38,39 "Built target robot_commander_node"
+.PHONY : modern_cpp_course/robot_commander/CMakeFiles/robot_commander_node.dir/all
+
+# Build rule for subdir invocation for target.
+modern_cpp_course/robot_commander/CMakeFiles/robot_commander_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 modern_cpp_course/robot_commander/CMakeFiles/robot_commander_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+.PHONY : modern_cpp_course/robot_commander/CMakeFiles/robot_commander_node.dir/rule
+
+# Convenience name for target.
+robot_commander_node: modern_cpp_course/robot_commander/CMakeFiles/robot_commander_node.dir/rule
+
+.PHONY : robot_commander_node
+
+# clean rule for target.
+modern_cpp_course/robot_commander/CMakeFiles/robot_commander_node.dir/clean:
+	$(MAKE) -f modern_cpp_course/robot_commander/CMakeFiles/robot_commander_node.dir/build.make modern_cpp_course/robot_commander/CMakeFiles/robot_commander_node.dir/clean
+.PHONY : modern_cpp_course/robot_commander/CMakeFiles/robot_commander_node.dir/clean
+
+#=============================================================================
+# Target rules for target modern_cpp_course/robot_commander/CMakeFiles/robot_commander.dir
+
+# All Build rule for target.
+modern_cpp_course/robot_commander/CMakeFiles/robot_commander.dir/all:
+	$(MAKE) -f modern_cpp_course/robot_commander/CMakeFiles/robot_commander.dir/build.make modern_cpp_course/robot_commander/CMakeFiles/robot_commander.dir/depend
+	$(MAKE) -f modern_cpp_course/robot_commander/CMakeFiles/robot_commander.dir/build.make modern_cpp_course/robot_commander/CMakeFiles/robot_commander.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num=35,36 "Built target robot_commander"
+.PHONY : modern_cpp_course/robot_commander/CMakeFiles/robot_commander.dir/all
+
+# Build rule for subdir invocation for target.
+modern_cpp_course/robot_commander/CMakeFiles/robot_commander.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 modern_cpp_course/robot_commander/CMakeFiles/robot_commander.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+.PHONY : modern_cpp_course/robot_commander/CMakeFiles/robot_commander.dir/rule
+
+# Convenience name for target.
+robot_commander: modern_cpp_course/robot_commander/CMakeFiles/robot_commander.dir/rule
+
+.PHONY : robot_commander
+
+# clean rule for target.
+modern_cpp_course/robot_commander/CMakeFiles/robot_commander.dir/clean:
+	$(MAKE) -f modern_cpp_course/robot_commander/CMakeFiles/robot_commander.dir/build.make modern_cpp_course/robot_commander/CMakeFiles/robot_commander.dir/clean
+.PHONY : modern_cpp_course/robot_commander/CMakeFiles/robot_commander.dir/clean
+
+#=============================================================================
+# Target rules for target laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_cpp"
+.PHONY : laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+.PHONY : laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_cpp: laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# clean rule for target.
+laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+.PHONY : laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
 # Target rules for target laser_reader/CMakeFiles/sensor_msgs_generate_messages_eus.dir
@@ -849,31 +1027,58 @@ laser_reader/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean:
 .PHONY : laser_reader/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target laser_reader/CMakeFiles/roscpp_generate_messages_cpp.dir
+# Target rules for target laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-laser_reader/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
-	$(MAKE) -f laser_reader/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
-	$(MAKE) -f laser_reader/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
-.PHONY : laser_reader/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
+.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-laser_reader/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
+laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-.PHONY : laser_reader/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_cpp: laser_reader/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+geometry_msgs_generate_messages_eus: laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
-.PHONY : roscpp_generate_messages_cpp
+.PHONY : geometry_msgs_generate_messages_eus
 
 # clean rule for target.
-laser_reader/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
-	$(MAKE) -f laser_reader/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-.PHONY : laser_reader/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
+
+# All Build rule for target.
+laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_lisp"
+.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
+.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# clean rule for target.
+laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
+.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
 # Target rules for target laser_reader/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
@@ -930,33 +1135,6 @@ laser_reader/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean:
 .PHONY : laser_reader/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir
-
-# All Build rule for target.
-laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_py"
-.PHONY : laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-.PHONY : laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_py: laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_py
-
-# clean rule for target.
-laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-.PHONY : laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
-
-#=============================================================================
 # Target rules for target laser_reader/CMakeFiles/geometry_msgs_generate_messages_py.dir
 
 # All Build rule for target.
@@ -984,166 +1162,85 @@ laser_reader/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean:
 .PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target laser_reader/CMakeFiles/std_msgs_generate_messages_py.dir
+# Target rules for target laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-laser_reader/CMakeFiles/std_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f laser_reader/CMakeFiles/std_msgs_generate_messages_py.dir/build.make laser_reader/CMakeFiles/std_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f laser_reader/CMakeFiles/std_msgs_generate_messages_py.dir/build.make laser_reader/CMakeFiles/std_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
-.PHONY : laser_reader/CMakeFiles/std_msgs_generate_messages_py.dir/all
+laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_py"
+.PHONY : laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-laser_reader/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-.PHONY : laser_reader/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_py: laser_reader/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+sensor_msgs_generate_messages_py: laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
-.PHONY : std_msgs_generate_messages_py
+.PHONY : sensor_msgs_generate_messages_py
 
 # clean rule for target.
-laser_reader/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f laser_reader/CMakeFiles/std_msgs_generate_messages_py.dir/build.make laser_reader/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : laser_reader/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+.PHONY : laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
+# Target rules for target laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_cpp"
-.PHONY : laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_cpp"
+.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-.PHONY : laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-sensor_msgs_generate_messages_cpp: laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+geometry_msgs_generate_messages_cpp: laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
-.PHONY : sensor_msgs_generate_messages_cpp
+.PHONY : geometry_msgs_generate_messages_cpp
 
 # clean rule for target.
-laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
-.PHONY : laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
+laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
+.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target laser_reader/CMakeFiles/std_msgs_generate_messages_nodejs.dir
+# Target rules for target laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-laser_reader/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f laser_reader/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make laser_reader/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f laser_reader/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make laser_reader/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
-.PHONY : laser_reader/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_nodejs"
+.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-laser_reader/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-.PHONY : laser_reader/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_nodejs: laser_reader/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+geometry_msgs_generate_messages_nodejs: laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : std_msgs_generate_messages_nodejs
-
-# clean rule for target.
-laser_reader/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f laser_reader/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make laser_reader/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
-.PHONY : laser_reader/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
-
-#=============================================================================
-# Target rules for target laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir
-
-# All Build rule for target.
-laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target geometry_msgs_generate_messages_eus"
-.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-
-# Build rule for subdir invocation for target.
-laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_eus: laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_eus
+.PHONY : geometry_msgs_generate_messages_nodejs
 
 # clean rule for target.
-laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
-.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
-
-#=============================================================================
-# Target rules for target laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
-
-# All Build rule for target.
-laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
-.PHONY : laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-.PHONY : laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# clean rule for target.
-laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-.PHONY : laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-
-#=============================================================================
-# Target rules for target laser_reader/CMakeFiles/roscpp_generate_messages_eus.dir
-
-# All Build rule for target.
-laser_reader/CMakeFiles/roscpp_generate_messages_eus.dir/all:
-	$(MAKE) -f laser_reader/CMakeFiles/roscpp_generate_messages_eus.dir/build.make laser_reader/CMakeFiles/roscpp_generate_messages_eus.dir/depend
-	$(MAKE) -f laser_reader/CMakeFiles/roscpp_generate_messages_eus.dir/build.make laser_reader/CMakeFiles/roscpp_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
-.PHONY : laser_reader/CMakeFiles/roscpp_generate_messages_eus.dir/all
-
-# Build rule for subdir invocation for target.
-laser_reader/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 laser_reader/CMakeFiles/roscpp_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/catkin_ws/build/CMakeFiles 0
-.PHONY : laser_reader/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_eus: laser_reader/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-.PHONY : roscpp_generate_messages_eus
-
-# clean rule for target.
-laser_reader/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
-	$(MAKE) -f laser_reader/CMakeFiles/roscpp_generate_messages_eus.dir/build.make laser_reader/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-.PHONY : laser_reader/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
+.PHONY : laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
 # Target rules for target unit6_exercises/CMakeFiles/lambda_basics_node.dir
@@ -1503,7 +1600,7 @@ unit6_exercises/CMakeFiles/pcl_msgs_generate_messages_py.dir/clean:
 unit6_exercises/CMakeFiles/subscriber_basic_library.dir/all:
 	$(MAKE) -f unit6_exercises/CMakeFiles/subscriber_basic_library.dir/build.make unit6_exercises/CMakeFiles/subscriber_basic_library.dir/depend
 	$(MAKE) -f unit6_exercises/CMakeFiles/subscriber_basic_library.dir/build.make unit6_exercises/CMakeFiles/subscriber_basic_library.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num=35,36 "Built target subscriber_basic_library"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/catkin_ws/build/CMakeFiles --progress-num=40,41 "Built target subscriber_basic_library"
 .PHONY : unit6_exercises/CMakeFiles/subscriber_basic_library.dir/all
 
 # Build rule for subdir invocation for target.

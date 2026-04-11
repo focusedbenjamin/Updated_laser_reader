@@ -5,5 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("exercises_unit_8")
+subdirs("modern_cpp_course/robot_commander")
 subdirs("laser_reader")
 subdirs("unit6_exercises")

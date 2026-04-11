@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(laser_reader_LIBRARIES ${laser_reader_LIBRARIES})
 
   _list_append_unique(laser_reader_LIBRARY_DIRS ${${laser_reader_dep}_LIBRARY_DIRS})
-  _list_append_deduplicate(laser_reader_EXPORTED_TARGETS ${${laser_reader_dep}_EXPORTED_TARGETS})
+  list(APPEND laser_reader_EXPORTED_TARGETS ${${laser_reader_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "")
