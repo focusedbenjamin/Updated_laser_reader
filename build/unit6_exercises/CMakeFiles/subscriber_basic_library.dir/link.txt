@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libsubscriber_basic_library.so -o /home/user/catkin_ws/devel/lib/libsubscriber_basic_library.so CMakeFiles/subscriber_basic_library.dir/src/subscriber_basic.cpp.o 

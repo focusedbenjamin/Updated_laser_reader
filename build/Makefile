@@ -284,6 +284,578 @@ gtest/fast:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_py
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_lisp
+
+# Build rule for target.
+roscpp_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make laser_reader/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_cpp
+
+# Build rule for target.
+geometry_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_cpp
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_nodejs
+
+# Build rule for target.
+geometry_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_nodejs
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geometry_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_lisp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_eus
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_cpp
+
+# Build rule for target.
+std_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
+.PHONY : std_msgs_generate_messages_cpp
+
+# fast build rule for target.
+std_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+.PHONY : std_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_nodejs
+
+# Build rule for target.
+roscpp_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_nodejs
+.PHONY : roscpp_generate_messages_nodejs
+
+# fast build rule for target.
+roscpp_generate_messages_nodejs/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make laser_reader/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+.PHONY : roscpp_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_eus
+
+# Build rule for target.
+std_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
+.PHONY : std_msgs_generate_messages_eus
+
+# fast build rule for target.
+std_msgs_generate_messages_eus/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make laser_reader/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+.PHONY : std_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_lisp
+
+# Build rule for target.
+geometry_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_lisp
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_py
+
+# Build rule for target.
+roscpp_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/roscpp_generate_messages_py.dir/build.make laser_reader/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_lisp
+
+# Build rule for target.
+std_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make laser_reader/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_nodejs
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_nodejs
+.PHONY : rosgraph_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_eus
+
+# Build rule for target.
+sensor_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_eus
+.PHONY : sensor_msgs_generate_messages_eus
+
+# fast build rule for target.
+sensor_msgs_generate_messages_eus/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make laser_reader/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+.PHONY : sensor_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_cpp
+
+# Build rule for target.
+roscpp_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_lisp
+
+# Build rule for target.
+sensor_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make laser_reader/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_nodejs
+
+# Build rule for target.
+sensor_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_nodejs
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+sensor_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make laser_reader/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+.PHONY : sensor_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_py
+
+# Build rule for target.
+sensor_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make laser_reader/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_py
+
+# Build rule for target.
+geometry_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_py
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_py
+
+# Build rule for target.
+std_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
+.PHONY : std_msgs_generate_messages_py
+
+# fast build rule for target.
+std_msgs_generate_messages_py/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/std_msgs_generate_messages_py.dir/build.make laser_reader/CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_cpp
+
+# Build rule for target.
+sensor_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_nodejs
+
+# Build rule for target.
+std_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_nodejs
+.PHONY : std_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+std_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make laser_reader/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+.PHONY : std_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_eus
+
+# Build rule for target.
+geometry_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_eus
+.PHONY : geometry_msgs_generate_messages_eus
+
+# fast build rule for target.
+geometry_msgs_generate_messages_eus/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make laser_reader/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+.PHONY : geometry_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_cpp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make laser_reader/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_eus
+
+# Build rule for target.
+roscpp_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_eus
+.PHONY : roscpp_generate_messages_eus
+
+# fast build rule for target.
+roscpp_generate_messages_eus/fast:
+	$(MAKE) -f laser_reader/CMakeFiles/roscpp_generate_messages_eus.dir/build.make laser_reader/CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named lambda_basics_node
+
+# Build rule for target.
+lambda_basics_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lambda_basics_node
+.PHONY : lambda_basics_node
+
+# fast build rule for target.
+lambda_basics_node/fast:
+	$(MAKE) -f unit6_exercises/CMakeFiles/lambda_basics_node.dir/build.make unit6_exercises/CMakeFiles/lambda_basics_node.dir/build
+.PHONY : lambda_basics_node/fast
+
+#=============================================================================
+# Target rules for targets named magic_subscriber_function_node
+
+# Build rule for target.
+magic_subscriber_function_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 magic_subscriber_function_node
+.PHONY : magic_subscriber_function_node
+
+# fast build rule for target.
+magic_subscriber_function_node/fast:
+	$(MAKE) -f unit6_exercises/CMakeFiles/magic_subscriber_function_node.dir/build.make unit6_exercises/CMakeFiles/magic_subscriber_function_node.dir/build
+.PHONY : magic_subscriber_function_node/fast
+
+#=============================================================================
+# Target rules for targets named pcl_msgs_generate_messages_cpp
+
+# Build rule for target.
+pcl_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pcl_msgs_generate_messages_cpp
+.PHONY : pcl_msgs_generate_messages_cpp
+
+# fast build rule for target.
+pcl_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f unit6_exercises/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build.make unit6_exercises/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build
+.PHONY : pcl_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named main_edge_detector_node
+
+# Build rule for target.
+main_edge_detector_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main_edge_detector_node
+.PHONY : main_edge_detector_node
+
+# fast build rule for target.
+main_edge_detector_node/fast:
+	$(MAKE) -f unit6_exercises/CMakeFiles/main_edge_detector_node.dir/build.make unit6_exercises/CMakeFiles/main_edge_detector_node.dir/build
+.PHONY : main_edge_detector_node/fast
+
+#=============================================================================
+# Target rules for targets named magic_subscriber_class_node
+
+# Build rule for target.
+magic_subscriber_class_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 magic_subscriber_class_node
+.PHONY : magic_subscriber_class_node
+
+# fast build rule for target.
+magic_subscriber_class_node/fast:
+	$(MAKE) -f unit6_exercises/CMakeFiles/magic_subscriber_class_node.dir/build.make unit6_exercises/CMakeFiles/magic_subscriber_class_node.dir/build
+.PHONY : magic_subscriber_class_node/fast
+
+#=============================================================================
+# Target rules for targets named pcl_msgs_generate_messages_eus
+
+# Build rule for target.
+pcl_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pcl_msgs_generate_messages_eus
+.PHONY : pcl_msgs_generate_messages_eus
+
+# fast build rule for target.
+pcl_msgs_generate_messages_eus/fast:
+	$(MAKE) -f unit6_exercises/CMakeFiles/pcl_msgs_generate_messages_eus.dir/build.make unit6_exercises/CMakeFiles/pcl_msgs_generate_messages_eus.dir/build
+.PHONY : pcl_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named pcl_msgs_generate_messages_lisp
+
+# Build rule for target.
+pcl_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pcl_msgs_generate_messages_lisp
+.PHONY : pcl_msgs_generate_messages_lisp
+
+# fast build rule for target.
+pcl_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f unit6_exercises/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make unit6_exercises/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build
+.PHONY : pcl_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named main_pcl2image_node
+
+# Build rule for target.
+main_pcl2image_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main_pcl2image_node
+.PHONY : main_pcl2image_node
+
+# fast build rule for target.
+main_pcl2image_node/fast:
+	$(MAKE) -f unit6_exercises/CMakeFiles/main_pcl2image_node.dir/build.make unit6_exercises/CMakeFiles/main_pcl2image_node.dir/build
+.PHONY : main_pcl2image_node/fast
+
+#=============================================================================
+# Target rules for targets named pcl_msgs_generate_messages_nodejs
+
+# Build rule for target.
+pcl_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pcl_msgs_generate_messages_nodejs
+.PHONY : pcl_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+pcl_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f unit6_exercises/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build.make unit6_exercises/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/build
+.PHONY : pcl_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named magic_subscriber_function_library
+
+# Build rule for target.
+magic_subscriber_function_library: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 magic_subscriber_function_library
+.PHONY : magic_subscriber_function_library
+
+# fast build rule for target.
+magic_subscriber_function_library/fast:
+	$(MAKE) -f unit6_exercises/CMakeFiles/magic_subscriber_function_library.dir/build.make unit6_exercises/CMakeFiles/magic_subscriber_function_library.dir/build
+.PHONY : magic_subscriber_function_library/fast
+
+#=============================================================================
+# Target rules for targets named main_subscriber_basic_node
+
+# Build rule for target.
+main_subscriber_basic_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main_subscriber_basic_node
+.PHONY : main_subscriber_basic_node
+
+# fast build rule for target.
+main_subscriber_basic_node/fast:
+	$(MAKE) -f unit6_exercises/CMakeFiles/main_subscriber_basic_node.dir/build.make unit6_exercises/CMakeFiles/main_subscriber_basic_node.dir/build
+.PHONY : main_subscriber_basic_node/fast
+
+#=============================================================================
+# Target rules for targets named magic_printer_library
+
+# Build rule for target.
+magic_printer_library: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 magic_printer_library
+.PHONY : magic_printer_library
+
+# fast build rule for target.
+magic_printer_library/fast:
+	$(MAKE) -f unit6_exercises/CMakeFiles/magic_printer_library.dir/build.make unit6_exercises/CMakeFiles/magic_printer_library.dir/build
+.PHONY : magic_printer_library/fast
+
+#=============================================================================
+# Target rules for targets named pcl_msgs_generate_messages_py
+
+# Build rule for target.
+pcl_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pcl_msgs_generate_messages_py
+.PHONY : pcl_msgs_generate_messages_py
+
+# fast build rule for target.
+pcl_msgs_generate_messages_py/fast:
+	$(MAKE) -f unit6_exercises/CMakeFiles/pcl_msgs_generate_messages_py.dir/build.make unit6_exercises/CMakeFiles/pcl_msgs_generate_messages_py.dir/build
+.PHONY : pcl_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named subscriber_basic_library
+
+# Build rule for target.
+subscriber_basic_library: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 subscriber_basic_library
+.PHONY : subscriber_basic_library
+
+# fast build rule for target.
+subscriber_basic_library/fast:
+	$(MAKE) -f unit6_exercises/CMakeFiles/subscriber_basic_library.dir/build.make unit6_exercises/CMakeFiles/subscriber_basic_library.dir/build
+.PHONY : subscriber_basic_library/fast
+
+#=============================================================================
+# Target rules for targets named magic_subscriber_class_library
+
+# Build rule for target.
+magic_subscriber_class_library: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 magic_subscriber_class_library
+.PHONY : magic_subscriber_class_library
+
+# fast build rule for target.
+magic_subscriber_class_library/fast:
+	$(MAKE) -f unit6_exercises/CMakeFiles/magic_subscriber_class_library.dir/build.make unit6_exercises/CMakeFiles/magic_subscriber_class_library.dir/build
+.PHONY : magic_subscriber_class_library/fast
+
+#=============================================================================
+# Target rules for targets named main_pcl_topic_subscriber_node
+
+# Build rule for target.
+main_pcl_topic_subscriber_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main_pcl_topic_subscriber_node
+.PHONY : main_pcl_topic_subscriber_node
+
+# fast build rule for target.
+main_pcl_topic_subscriber_node/fast:
+	$(MAKE) -f unit6_exercises/CMakeFiles/main_pcl_topic_subscriber_node.dir/build.make unit6_exercises/CMakeFiles/main_pcl_topic_subscriber_node.dir/build
+.PHONY : main_pcl_topic_subscriber_node/fast
+
+#=============================================================================
+# Target rules for targets named magic_subscriber_image_edgedetector_library
+
+# Build rule for target.
+magic_subscriber_image_edgedetector_library: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 magic_subscriber_image_edgedetector_library
+.PHONY : magic_subscriber_image_edgedetector_library
+
+# fast build rule for target.
+magic_subscriber_image_edgedetector_library/fast:
+	$(MAKE) -f unit6_exercises/CMakeFiles/magic_subscriber_image_edgedetector_library.dir/build.make unit6_exercises/CMakeFiles/magic_subscriber_image_edgedetector_library.dir/build
+.PHONY : magic_subscriber_image_edgedetector_library/fast
+
+#=============================================================================
+# Target rules for targets named magic_subscriber_pcl2image_library
+
+# Build rule for target.
+magic_subscriber_pcl2image_library: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 magic_subscriber_pcl2image_library
+.PHONY : magic_subscriber_pcl2image_library
+
+# fast build rule for target.
+magic_subscriber_pcl2image_library/fast:
+	$(MAKE) -f unit6_exercises/CMakeFiles/magic_subscriber_pcl2image_library.dir/build.make unit6_exercises/CMakeFiles/magic_subscriber_pcl2image_library.dir/build
+.PHONY : magic_subscriber_pcl2image_library/fast
+
+#=============================================================================
+# Target rules for targets named main_magic_printer_node
+
+# Build rule for target.
+main_magic_printer_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main_magic_printer_node
+.PHONY : main_magic_printer_node
+
+# fast build rule for target.
+main_magic_printer_node/fast:
+	$(MAKE) -f unit6_exercises/CMakeFiles/main_magic_printer_node.dir/build.make unit6_exercises/CMakeFiles/main_magic_printer_node.dir/build
+.PHONY : main_magic_printer_node/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -306,6 +878,50 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... std_msgs_generate_messages_eus"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... sensor_msgs_generate_messages_eus"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... sensor_msgs_generate_messages_nodejs"
+	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... std_msgs_generate_messages_py"
+	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_eus"
+	@echo "... lambda_basics_node"
+	@echo "... magic_subscriber_function_node"
+	@echo "... pcl_msgs_generate_messages_cpp"
+	@echo "... main_edge_detector_node"
+	@echo "... magic_subscriber_class_node"
+	@echo "... pcl_msgs_generate_messages_eus"
+	@echo "... pcl_msgs_generate_messages_lisp"
+	@echo "... main_pcl2image_node"
+	@echo "... pcl_msgs_generate_messages_nodejs"
+	@echo "... magic_subscriber_function_library"
+	@echo "... main_subscriber_basic_node"
+	@echo "... magic_printer_library"
+	@echo "... pcl_msgs_generate_messages_py"
+	@echo "... subscriber_basic_library"
+	@echo "... magic_subscriber_class_library"
+	@echo "... main_pcl_topic_subscriber_node"
+	@echo "... magic_subscriber_image_edgedetector_library"
+	@echo "... magic_subscriber_pcl2image_library"
+	@echo "... main_magic_printer_node"
 .PHONY : help
 
 
