@@ -1,8 +1,0 @@
-prefix=/home/user/catkin_ws/install
-
-Name: unit6_exercises
-Description: Description of unit6_exercises
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -lunit6_exercises
-Requires: roscpp

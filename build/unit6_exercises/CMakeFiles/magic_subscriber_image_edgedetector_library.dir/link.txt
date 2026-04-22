@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC   -shared -Wl,-soname,libmagic_subscriber_image_edgedetector_library.so -o /home/user/catkin_ws/devel/lib/libmagic_subscriber_image_edgedetector_library.so CMakeFiles/magic_subscriber_image_edgedetector_library.dir/src/magic_subscriber_image_edgedetector.cpp.o 
